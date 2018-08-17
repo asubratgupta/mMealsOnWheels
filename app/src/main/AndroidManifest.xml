@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.subratgupta.mmealsonwheels">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -32,7 +33,8 @@
             android:name=".MainActivity"
             android:label="@string/title_activity_welcome"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".MenuActivity"></activity>
+        <activity android:name=".MenuActivity" />
+
     </application>
 
 </manifest>

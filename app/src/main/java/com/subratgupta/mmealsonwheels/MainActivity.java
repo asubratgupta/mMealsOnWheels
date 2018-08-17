@@ -91,6 +91,9 @@ public class MainActivity extends BaseActivity implements
             onRestoreInstanceState(savedInstanceState);
         }
 
+        MyLocation myLocation = new MyLocation();
+        myLocation.get(getApplicationContext(), this);
+
         // Assign views
         mPhoneNumberViews = findViewById(R.id.phone_auth_fields);
 //        mSignedInViews = findViewById(R.id.signed_in_buttons);
