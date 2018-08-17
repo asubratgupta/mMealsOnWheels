@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/grey_100"
@@ -19,6 +20,7 @@
         app:titleTextColor="@android:color/white" />
 
     <LinearLayout
+        android:id="@+id/phone_auth_fields"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -37,6 +39,7 @@
             android:layout_margin="8dp"
             android:hint="@string/hint_phone_number"
             android:inputType="phone"
+            android:maxLength="10"
             android:textColor="@color/blackColor"
             android:textColorHint="@color/grey_500" />
 
@@ -76,6 +79,7 @@
             android:layout_margin="8dp"
             android:hint="@string/hint_verification_code"
             android:inputType="number"
+            android:maxLength="6"
             android:textColor="@color/blackColor"
             android:textColorHint="@color/grey_500" />
 
